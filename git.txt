@@ -1,0 +1,62 @@
+创建版本库         git init
+
+把文件添加到缓存区 git add shd.txt
+
+把文件提交到仓库   git commit -m '提交版本内容'
+
+查看文件是否提交   git status 
+
+查看修改内容     git diff shd.txt
+
+版本回退：
+
+查看版本记录   git  log /git log --pretty=oneline
+
+
+
+回到上个版本    git reset --hard HEAD^  上上个版本 git reset --hard HEAD^^
+回退100个版本    git reset --hard HEAD~100
+
+获取版本号     git reflog
+
+通过版本号回退内容   git reset --hard 版本号
+
+撤销修改内容  git checkout -- shd.txt
+
+
+
+如何把本地库推送到github上
+git remote add origin 你的网址
+
+把本地内容推送到远程
+git push -u origin master  其中-u第一次需加上
+
+如何从远程克隆
+
+git clone 你的网址
+
+创建并且切换分支
+git checkout -b dev =git branch dev +git checkout dev
+
+查看分支
+git branch
+
+合并指定分支到当前分支
+ git merge dev
+
+合并分支并且保留分支信息
+git merge --no-ff -m '合并分支' dev
+
+删除分支
+git branch -d dev
+
+删除远程分支
+git branch -r -d origin/branch-name 
+
+切换分支和主枝
+git checkout dev  git checkout master
+
+
+
+
+
